@@ -1,15 +1,16 @@
 
 .headings {
 text-align: center;
-color: purple;
+color: #1BB39C;
 font-family: Helvetica;
 }
 .subheadings {
-  color: purple;
+  color: #1BB39C;
   font-family: Helvetica;
 }
 
 .content {
+  font-family: Verdana;
 
 }
 .navigation {
@@ -17,7 +18,4 @@ font-family: Helvetica;
 }
 .footer {
 
-}
-body {
-  background-color: #C3B5B5
 }
