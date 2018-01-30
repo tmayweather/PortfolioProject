@@ -4,6 +4,7 @@ text-align: center;
 color: #1BB39C;
 font-family: Helvetica;
 }
+
 .subheadings {
   color: #1BB39C;
   font-family: Helvetica;
@@ -17,5 +18,32 @@ font-family: Helvetica;
 
 }
 .footer {
+  background-color: lightgrey;
 
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+div {
+    padding: 5px 10px;
+    margin: 20px;
+}
+
+div.headings {
+border: 5px ridge grey;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height:200px;width:250px;
 }
