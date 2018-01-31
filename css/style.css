@@ -1,4 +1,8 @@
 
+body {
+  background-color: #fffff0
+}
+
 .headings {
 text-align: center;
 color: #1BB39C;
@@ -23,9 +27,10 @@ font-family: Helvetica;
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
 }
+
 
 html {
     box-sizing: border-box;
@@ -34,6 +39,14 @@ html {
 div {
     padding: 5px 10px;
     margin: 20px;
+}
+
+div.subheadings {
+  border: solid lightgrey 3px;
+  border-left: hidden;
+  border-right: hidden;
+  border-top: hidden;
+
 }
 
 div.headings {
@@ -46,4 +59,13 @@ border: 5px ridge grey;
     margin-right: auto;
     width: 50%;
     height:200px;width:250px;
+}
+
+.mypic {
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      height:350px;width:300px;
+
 }
