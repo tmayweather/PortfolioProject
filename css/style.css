@@ -3,6 +3,26 @@ body {
   background-color: #FEFEFA
 }
 
+html {
+    box-sizing: border-box;
+}
+.navigation {
+  position: relative;
+}
+
+.navigation a {
+background-color: lightgrey;
+margin-top: -20px;
+float: left;
+display: block;
+padding: 10px;
+color: #1BB39C
+}
+
+.navigation a:hover {
+  color: black
+}
+
 .headings {
 text-align: center;
 color: #1BB39C;
@@ -16,11 +36,10 @@ font-family: Helvetica;
 
 .content {
   font-family: Verdana;
-
 }
-.navigation {
 
-}
+
+
 .footer {
   background-color: lightgrey;
 
@@ -29,11 +48,6 @@ font-family: Helvetica;
 .container {
   max-width: 1000px;
   margin: 0 auto;
-}
-
-
-html {
-    box-sizing: border-box;
 }
 
 div {
@@ -46,7 +60,6 @@ div.subheadings {
   border-left: hidden;
   border-right: hidden;
   border-top: hidden;
-
 }
 
 div.headings {
@@ -66,6 +79,11 @@ border: 5px ridge grey;
       margin-left: auto;
       margin-right: auto;
       width: 50%;
-      height:350px;width:300px;
+      height:350px;width:275px;
+}
 
+#contactform {
+padding: 5px 10px;
+margin: 20px;
+margin-top: 100px;
 }
