@@ -6,27 +6,69 @@ body {
 html {
     box-sizing: border-box;
 }
-.navigation {
+
+nav {
+  width: 105%;
+  height: 60px;
+  background-color: #1BB39C;
+  margin-top: -8px;
+  margin-left: -8px;
+}
+
+nav ul {
+  float: left;
+}
+
+nav ul li {
+  float: left;
+  list-style: none;
   position: relative;
 }
 
-.navigation a {
-background-color: lightgrey;
-margin-top: -20px;
-float: left;
-display: block;
-padding: 10px;
-color: #1BB39C
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  font-family: Helvetica;
+  text-decoration: none;
+  margin-top: -8px;
+  margin-left: -20px;
+  color: #FEFEFA;
 }
 
-.navigation a:hover {
-  color: black
+nav ul li ul {
+display: none;
+position: absolute;
+background-color: #1BB39C;
+padding: 8px 20px;
+border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul {
+display: block;
+}
+
+nav ul li ul li {
+width: 180px;
+border-radius: 4px;
+padding-top: 4px;
+
+}
+
+
+nav ul li ul li a {
+padding: 8px 20px;
+}
+
+nav ul li ul li a:hover {
+padding: 8px 20px;
+background-color: lightgrey;
 }
 
 .headings {
 text-align: center;
 color: #1BB39C;
 font-family: Helvetica;
+
 }
 
 .subheadings {
@@ -41,12 +83,19 @@ font-family: Helvetica;
 
 
 .footer {
-  background-color: lightgrey;
+  background-color: #1BB39C;
+  color: #FEFEFA;
+  width: 105%;
+  margin-left: -8px;
+  }
 
+.footer  a {
+text-decoration:none;
+color: #FEFEFA;
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -64,6 +113,8 @@ div.subheadings {
 
 div.headings {
 border: 5px ridge grey;
+padding: 0px 5px;
+margin-top: 1.3em;
 }
 
 .image {
