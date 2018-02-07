@@ -1,8 +1,78 @@
 
+body {
+  background-color: #FEFEFA
+}
+
+html {
+    box-sizing: border-box;
+}
+
+#greeting {
+  background-color: pink;
+}
+
+nav {
+  width: 105%;
+  height: 60px;
+  background-color: #1BB39C;
+  margin-top: -8px;
+  margin-left: -8px;
+}
+
+nav ul {
+  float: left;
+}
+
+nav ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  font-family: Helvetica;
+  text-decoration: none;
+  margin-top: -8px;
+  margin-left: -20px;
+  color: #FEFEFA;
+}
+
+nav ul li ul {
+display: none;
+position: absolute;
+background-color: #1BB39C;
+padding: 8px 20px;
+border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul {
+display: block;
+}
+
+nav ul li ul li {
+width: 180px;
+border-radius: 4px;
+padding-top: 4px;
+
+}
+
+
+nav ul li ul li a {
+padding: 8px 20px;
+}
+
+nav ul li ul li a:hover {
+padding: 8px 20px;
+background-color: lightgrey;
+}
+
 .headings {
 text-align: center;
 color: #1BB39C;
 font-family: Helvetica;
+
 }
 
 .subheadings {
@@ -12,14 +82,20 @@ font-family: Helvetica;
 
 .content {
   font-family: Verdana;
-
 }
-.navigation {
 
-}
+
+
 .footer {
-  background-color: lightgrey;
+  background-color: #1BB39C;
+  color: #FEFEFA;
+  width: 105%;
+  margin-left: -8px;
+  }
 
+.footer  a {
+text-decoration:none;
+color: #FEFEFA;
 }
 
 .container {
@@ -27,17 +103,22 @@ font-family: Helvetica;
   margin: 0 auto;
 }
 
-html {
-    box-sizing: border-box;
-}
-
 div {
     padding: 5px 10px;
     margin: 20px;
 }
 
+div.subheadings {
+  border: solid lightgrey 3px;
+  border-left: hidden;
+  border-right: hidden;
+  border-top: hidden;
+}
+
 div.headings {
 border: 5px ridge grey;
+padding: 0px 5px;
+margin-top: 1.3em;
 }
 
 .image {
@@ -46,4 +127,18 @@ border: 5px ridge grey;
     margin-right: auto;
     width: 50%;
     height:200px;width:250px;
+}
+
+.mypic {
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      height:350px;width:275px;
+}
+
+#contactform {
+padding: 5px 10px;
+margin: 20px;
+margin-top: 100px;
 }

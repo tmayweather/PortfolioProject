@@ -8,28 +8,65 @@
   <title>T'nea Mayweather | Contact</title>
 </head>
 <body>
-  <div class="navigation">
+
   <nav>
-    <a href = "../">Home</a>
-    <a href = "/media/">Media</a>
-   <a href = "/blog">Blog</a>
-   <a href = "/contact">Contact</a>
-  </nav>
-  </div>
-<div class="container">
-  <form>
-  <input type="first name" placeholder = "First Name">
-<input type= "last name" placeholder = "Last Name"
-  <input type="password" placeholder = "Password">
-  <input type="email" placeholder = "your.email@example.com">
+  <ul>
+    <li><a href = "../">Home</a></li>
+    <li><a href = "#">Projects</a>
+          <ul>
+                <li><a href = "/projects/first-project/">First Project</a></li>
+                <li><a href = "#">Second Project</a></li>
+                <li><a href = "#">Third Project</a></li>
+          </ul>
+  </li>
+    <li><a href = "/media/">Media</a></li>
+    <li><a href = "/blog/">Blog</a></li>
+    <li><a href = "/contact/">Contact</a></li>
+  </ul>
+    </nav>
+
+
+<div id="contactform">
+  <form action="https://formspree.io/tnea.mayweather@hotmail.com" method="POST">
+
+  <input type="text" name="firstname" placeholder="First Name"autofocus required>
+  <input type="text" name="lastname" placeholder="Last Name" required>
+  <input type="email" name="userEmail" placeholder="your.email@example.com" required>
+<br><br>
+  <label>What's this message about?<br>
+    <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you!</span>
+    <input type="radio" name="subject" value="personal" checked><span>Personal message</span>
+    <input type="radio" name="subject" value="other" checked><span>Don't know/something else</span>
+  </label>
+
+  <input type="checkbox" name="optin" value="trusting" checked>Subscribe me to your newsletter!
+  <input type="checkbox" name="optout" value="skeptical" disabled>Cheeky checkbox...
+<br><br>
+  <label for="marketing">How did you hear about me?</label><br>
+  <select name="marketing">
+    <optgroup label="Online">
+      <option value="social">Social Media (FB, Twitter, LinkedIn)</option>
+      <option value="github">Online Portfolio (GitHub)</option>
+      <option value="search">Search Engine</option>
+      <option value="email">Email</option>
+    </optgroup>
+    <optgroup label="In-Person">
+      <option value="networking">We met at a networking event</option>
+      <option value="referral">Personal referral</option>
+      <option value="random">We met somewhere else</option>
+    </optgroup>
+    <option value="other">Other</option>
+  </select>
+<br><br>
+  <textarea name="user_message" rows="8" cols="40"></textarea><br>
   <input type="submit">
 </form>
 </div>
 
-  <div class="footer">
-  <a href="mailto:tnea.mayweather@hotmail.com?Subject=Contact%20Form">Contact Me</a>
-  <br>&copy; 2018 T'nea Mayweather
-  </div>
+<div class="footer">
+<a href="mailto:tnea.mayweather@hotmail.com?Subject=Contact%20Form">Contact Me</a>
+<br><br>&copy; 2018 T'nea Mayweather
+</div>
 
 
 </body>
