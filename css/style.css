@@ -7,10 +7,13 @@ html {
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 #greeting {
   background-color: pink;
 }
 
+=======
+>>>>>>> ea3a1bdd036992e1cf8ca9f92886fdc2ec9777d7
 nav {
   width: 105%;
   height: 60px;
