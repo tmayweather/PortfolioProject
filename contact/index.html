@@ -9,21 +9,24 @@
 </head>
 <body>
 
-  <nav>
-  <ul>
-    <li><a href = "../">Home</a></li>
-    <li><a href = "#">Projects</a>
-          <ul>
-                <li><a href = "/projects/first-project/">First Project</a></li>
-                <li><a href = "#">Second Project</a></li>
-                <li><a href = "#">Third Project</a></li>
-          </ul>
-  </li>
-    <li><a href = "/media/">Media</a></li>
-    <li><a href = "/blog/">Blog</a></li>
-    <li><a href = "/contact/">Contact</a></li>
-  </ul>
-    </nav>
+  <div id="sideMenu" class="side">
+      <a href="javascript:void(0)" class="close" onclick="closeMenu()">&times;</a>
+      <div class="sm-wrapper">
+          <a href="../">HOME</a>
+          <a href="/about/">ABOUT</a>
+          <a href="/projects/">PROJECTS</a>
+          <a href="/contact/">CONTACT</a>
+      </div>
+  </div>
+
+<div id="pg-content">
+      <div id="menu" onclick="openMenu()">&#9776;</div><br>
+
+
+
+
+
+
 
 
 <div id="contactform">
@@ -34,13 +37,10 @@
   <input type="email" name="userEmail" placeholder="your.email@example.com" required>
 <br><br>
   <label>What's this message about?<br>
-    <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you!</span>
-    <input type="radio" name="subject" value="personal" checked><span>Personal message</span>
-    <input type="radio" name="subject" value="other" checked><span>Don't know/something else</span>
+    <input type="radio" name="subject" value="professional" checked>I'd like to hire you!
+    <input type="radio" name="subject" value="personal" checked>Personal message
+    <input type="radio" name="subject" value="other" checked>Don't know/something else
   </label>
-
-  <input type="checkbox" name="optin" value="trusting" checked>Subscribe me to your newsletter!
-  <input type="checkbox" name="optout" value="skeptical" disabled>Cheeky checkbox...
 <br><br>
   <label for="marketing">How did you hear about me?</label><br>
   <select name="marketing">
@@ -62,12 +62,14 @@
   <input type="submit">
 </form>
 </div>
-
-<div class="footer">
-<a href="mailto:tnea.mayweather@hotmail.com?Subject=Contact%20Form">Contact Me</a>
-<br><br>&copy; 2018 T'nea Mayweather
 </div>
 
+<!--<div class="footer">
+<a href="mailto:tnea.mayweather@hotmail.com?Subject=Contact%20Form">Contact Me</a>
+<br><br>&copy; 2018 T'nea Mayweather
+</div>-->
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script type="text/javascript" src="../portfolio.js"></script>
 
 </body>
 </html>
