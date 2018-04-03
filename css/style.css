@@ -80,7 +80,7 @@ h1 {
     font-size: 5em;
     text-align: center;
     letter-spacing: 20px;
-    padding: 40px 0px 10px 25px;
+    padding: 0px 0px 10px 25px;
     margin-bottom: 0;
     color: #5B5B5B;
 }
@@ -104,13 +104,15 @@ h2 {
 .headings {
     color: #1BB39C;
     letter-spacing: 5px;
+    text-align: center;
 }
 
 .mypic {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    margin-top: 50px;
+    
     height: 350px;
     width: 275px;
     border-radius: 5%;
@@ -123,13 +125,65 @@ h2 {
     font-size: 5em;
     color: #1BB39C;
     position: relative;
-    left: 40%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
-#contactform {
-    padding: 5px 10px;
-    margin: 20px;
+#socialIcons {
+    text-align: center;
+} 
+
+#contactForm {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1BB39C;
+    padding: 10px;
     margin-top: 100px;
+    width: 500px;
+    border: 3px solid lightgrey;
+}
+
+label {
+        font-family: "Raleway", sans-serif;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 0px;
+        margin-top: 5px;    
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    width: 450px;
+    border-radius: 4px;
+}
+
+form p {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.textArea {
+    width: 400px;
+    padding-top: 0px;
+    align-self: center; 
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    width: 473px;
+    text-align: center;
+    background-color: #5B5B5B;
+    color: white;
+    border-radius: 4px;
 }
 
 .runner {
@@ -205,13 +259,12 @@ blockquote span {
 }
 
 .resume {
-font-style: "Jura", monospace;
-text-align: center;
-font-size: 4em;
-color: #1BB39C;
-letter-spacing: 5px;
+    font-style: "Jura", monospace;
+    text-align: center;
+    font-size: 4em;
+    color: #1BB39C;
+    letter-spacing: 5px;
 }
-
 
 .animated {
     -webkit-animation-duration: 1s;
@@ -224,33 +277,135 @@ letter-spacing: 5px;
 
 @media only screen and (max-width: 600px) {
     .mypic {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        width: 150px;
+        height: 200px;
+        margin-top: 50px;
     }
+    
     h1 {
-        padding-top: 0;
+        
         letter-spacing: 0px;
-        font-size: 2.5em;
+        font-size: 1.0em;
         text-align: center;
     }
-    span {
+    
+    .lastName {
         text-align: center;
         padding-left: 7px;
         letter-spacing: 0px;
     }
+    
     h2 {
         font-size: 2em;
         letter-spacing: 15px;
     }
     .icons {
         font-size: 4em;
-        position: relative;
-        left: 0%;
+     
     }
-    #socialIcons {
-        display: inline-block;
-        width: 100%;
-        text-align: center;
+ 
+    .headings {
+        margin-top: 20px;
+    }
+
+    .statement {
+        margin-top: 20px;
+    }
+
+    blockquote {
+        margin-top: 400px;
+        font-size: 1.1em;
+        width: 300px;
+    }
+
+    span {
+      font-size: 1em;
+    }
+
+    .content {
+        font-size: 1.2em;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+     blockquote {
+         margin-top: 300px;
+         font-size: 1.1em;
+         width: 350px;
+     }
+
+       span {
+           font-size: 1em;
+       }
+
+       .content {
+           font-size: 1.1em;
+       }
+
+
+h1 {
+    letter-spacing: 4px;
+    font-size: 3.0em;
+    
+}
+
+ h2 {
+     font-size: 2.5em;
+     letter-spacing: 12px;
+ }
+.lastName {
+    letter-spacing: 4px;
+    
+}
+
+.mypic {
+    margin-top: 30px;
+    height: 250px;
+    width: 200px;
+}
+
+
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        letter-spacing: 2px;
+        font-size: 2.0em;
+    }
+    h2 {
+        font-size: 1.8em;
+        letter-spacing: 6px;
+    }
+    .lastName {
+        letter-spacing: 2px;
+    }
+   
+    .mypic {
+        margin-top: 30px;
+        height: 200px;
+        width: 150px;
+    }
+
+    .icons {
+        font-size: 3em;
+    }
+    
+    blockquote {
+        margin-top: 425px;
+        font-size: 1.0em;
+        padding-left: 33px;
+        width: 300px;
+    }
+    
+    .content {
+        font-size: 1.1em;
+    }
+    
+    .statement {
+        font-size: 1.2em;
     }
 }
+
+
+
