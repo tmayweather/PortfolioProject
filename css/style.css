@@ -257,21 +257,27 @@ button {
     background-color: #EDEDED;
 }
 
+.col-xs-8 {
+    float: none;
+}
+
+
+
 blockquote {
     font-size: 1.3em;
-    width: 60%;
-    margin: 20px auto;
+    margin-top: 20px;
     font-family: Open Sans;
     font-style: italic;
     color: #555555;
     padding: 1.2em 30px 1.2em 75px;
     border-left: 8px solid #1BB39C;
     line-height: 1.6;
-    position: relative;
     background: #EDEDED;
+    position: absolute;
+    margin: 0 auto;
 }
 
-.col-sm-8 {
+.quote {
     padding-left: 30px;
 }
 
@@ -355,7 +361,6 @@ blockquote span {
     }
 
     blockquote {
-        
         font-size: 1.1em;
         width: 300px;
     }
