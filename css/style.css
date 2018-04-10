@@ -1,7 +1,7 @@
 body {
-    margin: 0;
-    overflow: auto;
-    background-color: #F4F7F8;
+   width: 960px;
+   background-color: #F4F7F8;
+  
 }
 
 #menu {
@@ -24,6 +24,7 @@ body {
     left: 0;
     background-color: #1BB39C;
     overflow-x: hidden;
+    overflow-y: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
@@ -38,6 +39,7 @@ body {
     letter-spacing: 5px;
     margin-bottom: 20px;
     transition: 0.3s;
+    
 }
 
 .side .close {
@@ -75,14 +77,28 @@ body {
     position: absolute;
 }
 
-h1 {
+.firstName {
     font-family: "Jura", monospace;
     font-size: 5em;
     text-align: center;
-    letter-spacing: 20px;
+    letter-spacing: 10px;
     padding: 0px 0px 10px 25px;
     margin-bottom: 0;
     color: #5B5B5B;
+    font-weight: 600;
+}
+
+h1 {
+    
+        font-family: "Jura", monospace;
+        font-size: 5em;
+        text-align: center;
+        letter-spacing: 5px;
+        padding: 0px 0px 10px 25px;
+        color: #1BB39C;
+        letter-spacing: 5px;
+        text-align: center;
+    
 }
 
 h2 {
@@ -101,20 +117,14 @@ h2 {
     color: #1BB39C;
 }
 
-.headings {
-    color: #1BB39C;
-    letter-spacing: 5px;
-    text-align: center;
-}
 
 .mypic {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    
-    height: 350px;
-    width: 275px;
+    height: 15%;
+    width: 20%;
     border-radius: 5%;
     border-color: #1BB39C;
     border-style: solid;
@@ -135,31 +145,16 @@ h2 {
     text-align: center;
 } 
 
-.projects {
-margin: 200px 200px;
-}
-.thumbnail: hover {
+.projectTitle {
+text-align: center;
+color: #5B5B5B;
+font-family: 'Raleway', sans-serif;
+} 
 
 
-}
-
-th {
-    height: 50px;
-    text-align: center;
-    color: #5B5B5B;
-}
-
-td {
-    border: 3px solid lightgray;
-    
-    padding: 5px;
-}
-
-td:hover {
-    border: 3px solid #1BB39C;
-   
-    padding: 5px;
-}
+ a.thumbnail:hover {
+     border-color: #1BB39C;
+ }
 
 #contactForm {
     margin-left: auto;
@@ -169,6 +164,7 @@ td:hover {
     margin-top: 100px;
     width: 500px;
     border: 3px solid lightgrey;
+    border-radius: 1%;
 }
 
 #errorFirst,
@@ -190,6 +186,14 @@ input {
     width: 450px;
     border-radius: 4px;
 }
+input:focus {
+    border-color: #5B5B5B;
+}
+
+form {
+    width: 100%;
+    margin: 0 auto;
+}
 
 
 form p {
@@ -202,10 +206,15 @@ form p {
     text-align: center;
 }
 
-.textArea {
-    width: 400px;
-    padding-top: 0px;
-    align-self: center; 
+.contactForm .textArea {
+    width: 80%;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+textarea {
+    width: 100%;
+    margin: 0 auto;
 }
 
 button {
@@ -228,18 +237,12 @@ button {
     border-top: 3px solid #5B5B5B;
 }
 
-.container {
-    position: relative;
-}
-
 .content {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 40px;
     padding-right: 40px;
-    width: 100%;
-    position: absolute;
     color: #5B5B5B;
     font-family: 'Raleway', sans-serif;
     font-size: 1.3em;
@@ -257,7 +260,7 @@ button {
 blockquote {
     font-size: 1.3em;
     width: 60%;
-    margin: 220px auto;
+    margin: 20px auto;
     font-family: Open Sans;
     font-style: italic;
     color: #555555;
@@ -268,13 +271,17 @@ blockquote {
     background: #EDEDED;
 }
 
+.col-sm-8 {
+    padding-left: 30px;
+}
+
 blockquote::before {
     font-family: Arial;
     content: "\201C";
     color:#1BB39C;
     font-size: 4em;
     position: absolute;
-    left: 10px;
+    left: 0px;
     top: -10px;
 }
 
@@ -298,32 +305,35 @@ blockquote span {
     letter-spacing: 5px;
 }
 
-.animated {
+/* .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1.5s;
     -webkit-animation-fill-mode: none !important;
     animation-fill-mode: none !important
-}
+} */
 
 /* media queries */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .mypic {
-        width: 150px;
-        height: 200px;
+        width: 30%;
+        height: 20%;
         margin-top: 50px;
     }
     
+
     h1 {
         
         letter-spacing: 0px;
         font-size: 1.0em;
         text-align: center;
     }
-    
+    .firstName {
+       font-size: 3em;
+    }
     .lastName {
         text-align: center;
-        padding-left: 7px;
+        padding-left: 5px;
         letter-spacing: 0px;
     }
     
@@ -345,7 +355,7 @@ blockquote span {
     }
 
     blockquote {
-        margin-top: 400px;
+        
         font-size: 1.1em;
         width: 300px;
     }
@@ -360,9 +370,9 @@ blockquote span {
 
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 980px) {
      blockquote {
-         margin-top: 300px;
+         
          font-size: 1.1em;
          width: 350px;
      }
@@ -391,16 +401,16 @@ h1 {
     
 }
 
-.mypic {
+/* .mypic {
     margin-top: 30px;
     height: 250px;
     width: 200px;
-}
+} */
 
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
     h1 {
         letter-spacing: 2px;
         font-size: 2.0em;
@@ -409,22 +419,27 @@ h1 {
         font-size: 1.8em;
         letter-spacing: 6px;
     }
+
+    .firstName{
+       letter-spacing: 4px;
+       font-size: 2.0em;
+    }
     .lastName {
-        letter-spacing: 2px;
+        letter-spacing: 4px;
     }
-   
-    .mypic {
+    
+     .mypic {
         margin-top: 30px;
-        height: 200px;
-        width: 150px;
-    }
+        height: 25%;
+        width: 50%;
+    } 
 
     .icons {
         font-size: 3em;
     }
     
     blockquote {
-        margin-top: 425px;
+        
         font-size: 1.0em;
         padding-left: 33px;
         width: 300px;
