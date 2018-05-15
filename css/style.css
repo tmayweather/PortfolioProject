@@ -1,8 +1,12 @@
-body {
-   
-   /* background-image: url("https://images.unsplash.com/photo-1498196645145-687fd3bfe912?ixlib=rb-0.3.5&s=be423c62cf2c906f8095aadf28320093&auto=format&fit=crop&w=1350&q=80");
-   background-repeat: no-repeat;
-   background-size: cover; */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 1.8em;
+    background-color: #f4f4f4;
+    
 }
 .nav {
    margin-top: 0px;
@@ -48,104 +52,88 @@ a.linkHover:hover:before {
 }
 
 
-/* #menu {
-    font-size: 50px;
-    cursor: pointer;
-    color: #1BB39C;
-    position: fixed;
-}
-
-.sm-wrapper {
-    margin-top: 100px;
-}
-
-.side {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #1BB39C;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.side a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 45px;
-    font-family: 'Jura', monospace;
-    color: #F4F7F8;
-    display: block;
-    letter-spacing: 5px;
-    margin-bottom: 20px;
-    transition: 0.3s;
-    
-}
-/* .close {
-    
-} */
-
-/* .side .close {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 95px;
-    margin-left: 50px;
-    color: #F4F7F8;
-}
-
-.sm-wrapper a:after {
-    z-index: -1;
-    position: absolute;
-    left: 0%;
-    width: 0;
-    height: 50px;
-    background: #5B5B5B;
-    content: '';
-    transition: width 0.35s ease-in-out;
-}
-
-.sm-wrapper a:hover:after {
-    width: 10%;
-}
-
-.sm-wrapper a:hover {
-    padding-left: 64px;
-    transition: 0.35s ease-in-out;
-} */ 
-
 a {
     color: whitesmoke;
    
 }
-p {
+p.intro {
     font-family: "Roboto";
     color: gainsboro;
-    line-height: 0.5em;
+    line-height: 1.5;
     font-style: italic;
 }
-#about {
-    background-color:#F4F7F8;
-    height: 500px;
+
+p {
+font-family: "Roboto";
+color: #414344;
+line-height: 2.0;
 }
-.hero {
+
+
+.list {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.additional {
+    display: flex;
+    height: 100%;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+h4 {
+   
+    align-self: center;
+}
+
+.image, .imageTwo, .imageThree {
+    position:relative;
+    
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+
+
+.image {
        background-image: url("https://images.unsplash.com/photo-1498196645145-687fd3bfe912?ixlib=rb-0.3.5&s=be423c62cf2c906f8095aadf28320093&auto=format&fit=crop&w=1350&q=80");
-       background-repeat: no-repeat;
-       background-size: cover;
-        padding-left: 20px;
-        height: 960px;
+       min-height: 100%;
+  
+} 
+
+.imageTwo {
+    background-image: url("/Images/pexels-photo-374914.jpeg");
+   min-height: 600px;
+ 
+}
+
+.imageTwo::before, .imageThree::before{
+    
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(38, 26, 209, 0.5);
+        
+   
+}
+
+.imageThree {
+    background-image: url("/Images/farzad-nazifi-71686-unsplash.jpg");
+    min-height: 600px;
 }
 
 .name {
-    padding-top:200px;
+    padding-top:10%;
     font-family: "Raleway";
     font-size: 6em;
     text-align: left;
-    
+    max-width: 100%;
     color: whitesmoke;
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
     0px 8px 13px rgba(0, 0, 0, 0.1),
@@ -160,16 +148,7 @@ p {
   border-color: #0D21BE;
 }
 
-.arrow {
-     
-      color: whitesmoke;
-      position: absolute;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      font-size: 1.5em;
-}
+
 
 h2 {
 
@@ -184,211 +163,39 @@ h2 {
     margin-bottom: 10px;
 }
 
-.lastName {
-    letter-spacing: 10px;
-    padding-left: 44px;
-    color: #1BB39C;
+.headers {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-family: "Raleway";
+    font-size: 2em;
 }
 
-
-.mypic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    height: 15%;
-    width: 20%;
-    border-radius: 5%;
-    border-color: #1BB39C;
-    border-style: solid;
-    border-width: 2px;
+.section {
+   
+        text-align: center;
+        padding-top: 50px;
+        font-family: "Raleway";
+        font-size: 3em;
+   
 }
-
 .icons {
-    font-size: 5em;
+    font-size: 3em;
     color: whitesmoke;
+}
+
+.skillIcons {
+    font-size: 4em;
+    text-align: center;
+    color: #0D21BE;
+    
 }
 
 #socialIcons {
     margin-right: 10px;
     margin-top:10px;
      float: right;
-     font-size: 0.6em;
-     color: whitesmoke;
-    
 } 
-
-.solid {
-height: 300px;
-background-color: #1BB39C;
-color: #F4F7F8;
-}
-
-.projectTitle {
-text-align: center;
-color: #5B5B5B;
-font-family: 'Raleway', sans-serif;
-} 
-
-
- a.thumbnail:hover {
-     border-color: #1BB39C;
- }
-
-#contactForm {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #1BB39C;
-    padding: 10px;
-    margin-top: 100px;
-    width: 500px;
-    border: 3px solid lightgrey;
-    border-radius: 1%;
-}
-
-#errorFirst,
-#errorLast {
-    display: none;
-}
-
-label {
-        font-family: "Raleway", sans-serif;
-        color: white;
-        font-weight: bold;
-        margin-bottom: 0px;
-        margin-top: 5px;    
-}
-
-input {
-    display: block;
-    margin-bottom: 10px;
-    width: 450px;
-    border-radius: 4px;
-}
-input:focus {
-    border-color: #5B5B5B;
-}
-
-form {
-    width: 100%;
-    margin: 0 auto;
-}
-
-
-form p {
-    font-family: "Raleway", sans-serif;
-    color: white;
-    font-weight: bold;
-    font-size: 1.5em;
-    margin-bottom: 5px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.contactForm .textArea {
-    width: 80%;
-    padding: 0px;
-    margin: 0 auto;
-}
-
-textarea {
-    width: 100%;
-    margin: 0 auto;
-}
-
-button {
-    display: block;
-    margin: 0 auto;
-    width: 473px;
-    text-align: center;
-    background-color: #5B5B5B;
-    color: white;
-    border-radius: 4px;
-}
-
-.runner {
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
-    text-align: center;
-    color: whitesmoke;
-    padding-top: 10px;
-    margin-bottom: 20px;
-    
-}
-
-.content {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    color: #5B5B5B;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.3em;
-}
-
-.statement {
-    border-left: 3px solid #1BB39C;
-    color: #1BB39C;
-    font-size: 1.5em;
-    font-weight: bold;
-    padding-left: 10px;
-    background-color: #EDEDED;
-}
-
-.col-xs-8 {
-    float: none;
-}
-
-
-
-blockquote {
-    font-size: 1.3em;
-    margin-top: 20px;
-    font-family: Open Sans;
-    font-style: italic;
-    color: #555555;
-    padding: 1.2em 30px 1.2em 75px;
-    border-left: 8px solid #1BB39C;
-    line-height: 1.6;
-    background: #EDEDED;
-    position: absolute;
-    margin: 0 auto;
-}
-
-.quote {
-    padding-left: 30px;
-}
-
-blockquote::before {
-    font-family: Arial;
-    content: "\201C";
-    color:#1BB39C;
-    font-size: 4em;
-    position: absolute;
-    left: 0px;
-    top: -10px;
-}
-
-blockquote::after {
-    content: '';
-}
-
-blockquote span {
-    display: block;
-    color: #5B5B5B;
-    font-style: normal;
-    font-weight: bold;
-    margin-top: 1em;
-}
-
-.resume {
-    font-style: "Jura", monospace;
-    text-align: center;
-    font-size: 4em;
-    color: #1BB39C;
-    letter-spacing: 5px;
-}
 
 .animated {
     -webkit-animation-duration: 1s;
@@ -398,145 +205,37 @@ blockquote span {
 }
 
 /* media queries */
-
-@media only screen and (max-width: 768px) {
-    .mypic {
-        width: 30%;
-        height: 20%;
-        margin-top: 50px;
-    }
-    
-
-    h1 {
-        
-        letter-spacing: 0px;
-        font-size: 1.0em;
-        text-align: center;
-    }
-    .firstName {
-       font-size: 3em;
-    }
-    .lastName {
-        text-align: center;
-        padding-left: 5px;
-        letter-spacing: 0px;
-    }
-    
-    h2 {
-        font-size: 2em;
-        letter-spacing: 15px;
-    }
-    .icons {
-        font-size: 4em;
-     
-    }
- 
-    .headings {
-        margin-top: 20px;
-    }
-
-    .statement {
-        margin-top: 20px;
-    }
-
-    blockquote {
-        font-size: 1.1em;
-        width: 300px;
-    }
-
-    span {
-      font-size: 1em;
-    }
-
-    .content {
-        font-size: 1.2em;
-    }
-
-}
-
-@media only screen and (max-width: 980px) {
-     blockquote {
-         
-         font-size: 1.1em;
-         width: 350px;
-     }
-
-       span {
-           font-size: 1em;
-       }
-
-       .content {
-           font-size: 1.1em;
-       }
-
-
-h1 {
-    letter-spacing: 4px;
-    font-size: 3.0em;
-    
-}
+@media only screen and (max-width: 568px) {
+background-attachment: scroll;
+ body {
+     font-size: 10px;
+ }
 
  h2 {
-     font-size: 2.5em;
-     letter-spacing: 12px;
+     font-size: 2em;
  }
-.lastName {
-    letter-spacing: 4px;
+
+ .name {
     
+     font-size: 2em;
+ }
+
+ .icons {
+     font-size: 2em;
+     
+ }
+
+ .skillIcons {
+     font-size: 3em;
+ }
+
+
+
 }
 
-/* .mypic {
-    margin-top: 30px;
-    height: 250px;
-    width: 200px;
-} */
-
-
+@media only screen and (max-width: 768px) {
+background-attachment: scroll;
+ .name {
+     font-size: 2em;
+ }
 }
-
-@media only screen and (max-width: 480px) {
-    h1 {
-        letter-spacing: 2px;
-        font-size: 2.0em;
-    }
-    h2 {
-        font-size: 1.8em;
-        letter-spacing: 6px;
-    }
-
-    .firstName{
-       letter-spacing: 4px;
-       font-size: 2.0em;
-    }
-    .lastName {
-        letter-spacing: 4px;
-    }
-    
-     .mypic {
-        margin-top: 30px;
-        height: 25%;
-        width: 50%;
-    } 
-
-    .icons {
-        font-size: 3em;
-    }
-    
-    blockquote {
-        
-        font-size: 1.0em;
-        padding-left: 33px;
-        width: 300px;
-    }
-    
-    .content {
-        font-size: 1.1em;
-    }
-    
-    .statement {
-        font-size: 1.2em;
-    }
-}
-
-
-
