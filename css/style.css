@@ -2,10 +2,11 @@ body, html {
     height: 100%;
     margin: 0;
     font-size: 14px;
+    color:  whitesmoke;
     font-family: "Roboto";
     font-weight: 400;
     line-height: 1.8em;
-    background-color: #f4f4f4;
+    background-color: #4b4b4b
     
 }
 .nav {
@@ -52,7 +53,7 @@ a.linkHover:hover:before {
 }
 
 
-a {
+a.contact {
     color: whitesmoke;
    
 }
@@ -65,7 +66,7 @@ p.intro {
 
 p {
 font-family: "Roboto";
-color: #414344;
+color: whitesmoke;
 line-height: 2.0;
 }
 
@@ -138,7 +139,6 @@ h4 {
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
     0px 8px 13px rgba(0, 0, 0, 0.1),
     0px 18px 23px rgba(0, 0, 0, 0.1);
-    
 }
 
 .btn-primary {
@@ -188,7 +188,6 @@ h2 {
     font-size: 4em;
     text-align: center;
     color: #0D21BE;
-    
 }
 
 #socialIcons {
@@ -228,8 +227,6 @@ background-attachment: scroll;
  .skillIcons {
      font-size: 3em;
  }
-
-
 
 }
 
