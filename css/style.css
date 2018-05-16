@@ -9,14 +9,24 @@ body, html {
     background-color: #4b4b4b
     
 }
+
+.navbar {
+    background-color: transparent;
+    background: transparent;
+    border-width: 0px;
+}
 .nav {
-   margin-top: 0px;
+  margin-top: 40px;
    width: 100%;
+}
+
+.navbar-collapse.collapse.in {
+    display: block !important;
 }
 a.nav-link {
     font-family: "Roboto";
     font-size: 1.5em;
-    margin-top: -50px;
+
     margin-left:10px;
     margin-right: 10px;
 }
@@ -54,12 +64,12 @@ a.linkHover:hover:before {
 
 
 a.contact {
-    color: whitesmoke;
+    color: #0D21BE;
    
 }
 p.intro {
     font-family: "Roboto";
-    color: gainsboro;
+    
     line-height: 1.5;
     font-style: italic;
 }
@@ -99,7 +109,7 @@ h4 {
 
 
 .image {
-       background-image: url("https://images.unsplash.com/photo-1498196645145-687fd3bfe912?ixlib=rb-0.3.5&s=be423c62cf2c906f8095aadf28320093&auto=format&fit=crop&w=1350&q=80");
+       background-image: url("/Images/scott-trento-292771-unsplash.jpg");
        min-height: 100%;
   
 } 
@@ -125,7 +135,7 @@ h4 {
 }
 
 .imageThree {
-    background-image: url("/Images/farzad-nazifi-71686-unsplash.jpg");
+    background-image: url("/Images/garrhet-sampson-178990-unsplash.jpg");
     min-height: 600px;
 }
 
@@ -165,10 +175,10 @@ h2 {
 
 .headers {
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     font-family: "Raleway";
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .section {
