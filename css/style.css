@@ -1,13 +1,13 @@
-body, html {
+body,
+html {
     height: 100%;
     margin: 0;
     font-size: 14px;
-    color:  whitesmoke;
+    color: whitesmoke;
     font-family: "Roboto";
     font-weight: 400;
     line-height: 1.8em;
     background-color: #4b4b4b
-    
 }
 
 .navbar {
@@ -15,20 +15,21 @@ body, html {
     background: transparent;
     border-width: 0px;
 }
+
 .nav {
     margin-left: 100px;
-  margin-top: 20px;
-   width: 100%;
+    margin-top: 20px;
+    width: 100%;
 }
 
 .navbar-collapse.collapse.in {
     display: block !important;
 }
+
 a.nav-link {
     font-family: "Roboto";
     font-size: 1.5em;
-
-    margin-left:10px;
+    margin-left: 10px;
     margin-right: 10px;
 }
 
@@ -41,6 +42,7 @@ a.linkHover {
 a.linkHover:hover {
     color: #CD8FEA
 }
+
 a.linkHover:before {
     content: "";
     position: absolute;
@@ -48,8 +50,7 @@ a.linkHover:before {
     height: 2px;
     bottom: -3px;
     left: 0;
-    
-    background-color:#CD8FEA;
+    background-color: #CD8FEA;
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -63,24 +64,20 @@ a.linkHover:hover:before {
     transform: scaleX(1);
 }
 
-
 a.contact {
     color: #0D21BE;
-   
 }
+
 p.intro {
     font-family: "Roboto";
     font-style: italic;
     line-height: 1.5;
-    
 }
 
 p {
-font-family: "Roboto";
-
-line-height: 2.0;
+    font-family: "Roboto";
+    line-height: 2.0;
 }
-
 
 .list {
     display: flex;
@@ -93,44 +90,41 @@ line-height: 2.0;
     margin-top: 100px;
     padding-bottom: 100px;
 }
+
 h4 {
-   align-self: center;
+    align-self: center;
 }
 
-.image, .imageTwo, .imageThree {
-    position:relative;
-    
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
+.image,
+.imageTwo,
+.imageThree {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-
 .image {
-       background-image: url("/Images/scott-trento-292771-unsplash.jpg");
-       min-height: 100%;
-
-} 
-
+    background-image: url("/Images/scott-trento-292771-unsplash.jpg");
+    min-height: 100%;
+}
 
 .imageTwo {
     background-image: url("/Images/pexels-photo-374914.jpeg");
-   min-height: 600px;
- 
+    min-height: 600px;
 }
 
-.imageTwo::before, .imageThree::before{
-         content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(51, 52, 210, 0.5);
-        
-   
+.imageTwo::before,
+.imageThree::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(51, 52, 210, 0.5);
 }
 
 .imageThree {
@@ -139,22 +133,20 @@ h4 {
 }
 
 .name {
-    padding-top:10%;
+    padding-top: 10%;
     font-family: "Raleway";
     font-size: 6em;
     text-align: left;
     max-width: 100%;
     color: whitesmoke;
-    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
-    0px 8px 13px rgba(0, 0, 0, 0.1),
-    0px 18px 23px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary {
     width: 200px;
     float: left;
-  background-color: #0D21BE;
-  border-color: #0D21BE;
+    background-color: #0D21BE;
+    border-color: #0D21BE;
 }
 
 .badge-primary {
@@ -166,15 +158,10 @@ h4 {
     font-weight: 600;
 }
 
-
 h2 {
-
     font-family: "Roboto", monospace;
     font-size: 3em;
-     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
-     0px 8px 13px rgba(0, 0, 0, 0.1),
-     0px 18px 23px rgba(0, 0, 0, 0.1);
-    
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
     color: whitesmoke;
     margin-top: 0px;
     margin-bottom: 10px;
@@ -189,13 +176,12 @@ h2 {
 }
 
 .section {
-   
-        text-align: center;
-        padding-top: 50px;
-        font-family: "Raleway";
-        font-size: 3em;
-   
+    text-align: center;
+    padding-top: 50px;
+    font-family: "Raleway";
+    font-size: 3em;
 }
+
 .icons {
     font-size: 3em;
     color: whitesmoke;
@@ -209,9 +195,9 @@ h2 {
 
 #socialIcons {
     margin-right: 10px;
-    margin-top:10px;
-     float: right;
-} 
+    margin-top: 10px;
+    float: right;
+}
 
 input[type="text"] {
     background: transparent;
@@ -235,7 +221,6 @@ textarea {
     outline: none;
 }
 
-
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1.5s;
@@ -244,35 +229,29 @@ textarea {
 }
 
 /* media queries */
+
 @media only screen and (max-width: 568px) {
-background-attachment: scroll;
- body {
-     font-size: 10px;
- }
-
- h2 {
-     font-size: 2em;
- }
-
- .name {
-    
-     font-size: 3em;
- }
-
- .icons {
-     font-size: 2em;
-     
- }
-
- .skillIcons {
-     font-size: 3em;
- }
-
+    background-attachment: scroll;
+    body {
+        font-size: 10px;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .name {
+        font-size: 3em;
+    }
+    .icons {
+        font-size: 2em;
+    }
+    .skillIcons {
+        font-size: 3em;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-background-attachment: scroll;
- .name {
-     font-size: 2em;
- }
+    background-attachment: scroll;
+    .name {
+        font-size: 2em;
+    }
 }
