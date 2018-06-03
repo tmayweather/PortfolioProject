@@ -54,11 +54,12 @@ class App extends Component {
             <div className="row w-100">
               <div className="col-lg-8 col-md-12 col-xs-12">
                 <h3 className="headers">About Me</h3>
-                <p>Self-taught Web Developer and Bootcamp Grad who is a problem solver, eager learner and critical thinker.
+                <p>Self-taught Web Developer who is a problem solver, eager learner and critical thinker.
                     I have been fascinated with technology since a young age. One of my earliest memories in programming
                     is making conditional statements in a guessing game I was coding on my clunky VTech laptop at the
-                    age of 6. This passion allows me to leverage various languages and frameworks into interactive sites
-                        and apps that makes users lives easier. I am currently open to working In-house or remote full-time.</p>
+                    age of 6. I have always been a very curious person who loves to tinker with things to figure out they work and this curiosity is what lead me to a career in Web Developement.
+                     My passion allows me to leverage various languages and frameworks into interactive sites
+                    and apps that makes users lives easier. I am currently open to working in-house or remote full-time.</p>
               </div>
               <div className="col-lg-4 col-md-12 col-xs-12">
                 <h3 className="headers">Skills</h3>
@@ -116,8 +117,8 @@ class App extends Component {
               </div>
               <div className="col-md-8">
                 <h5>Fortnite Battle Royale Stats</h5>
-                <p>FNBRS allows users access player stats regardless of platform, view recent news and leaderboards. I used
-                    Node.js with Express.js for the server and API access and Semantic UI for the front end. Creating
+                <p>FNBRS allows users access player stats regardless of platform, view recent news and leaderboards. I leveraged
+                    Express.js for the server and API access and Semantic UI for the front end. Creating
                     this app reinforced my JS, HTML5 and CSS3 skills while also honing my ability to fetch data from
                         an API and sort through JSON to retrieve the data I need.</p>
                 <div className="badges">
@@ -143,9 +144,7 @@ class App extends Component {
                 <h5>Mayweather Health Tools</h5>
                 <p>MHT provides users with various tools in order to faciliate a healthy lifestyle. It features a Meal Randomizer
                     that takes proteins, carbs and vegetables and randomize each into a meal, BMI, BMR and water intake
-                    calculator and also a workout randomizer based on cardio, upper body and lower body. Creating this
-                    app taught me DOM manipulation, loops, event listeners and responsiveness among other things. Bootstrap
-                        is used for the interface.</p>
+                    calculator and also a workout randomizer based on cardio, upper body and lower body exercises.</p>
                 <div className="badges">
                   <span className="badge badge-primary">HTML</span>
                   <span className="badge badge-primary">CSS</span>
