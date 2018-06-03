@@ -57,7 +57,7 @@ class App extends Component {
                 <p>Self-taught Web Developer who is a problem solver, eager learner and critical thinker.
                     I have been fascinated with technology since a young age. One of my earliest memories in programming
                     is making conditional statements in a guessing game I was coding on my clunky VTech laptop at the
-                    age of 6. I have always been a very curious person who loves to tinker with things to figure out how they work and this curiosity is what lead me to a career in Web Developement.
+                    age of 6. I have always been a very curious person who loves to tinker with things and this curiosity is what lead me to a career in Web Developement.
                      My passion allows me to leverage various languages and frameworks into interactive sites
                     and apps that makes users lives easier. I am currently open to working in-house or remote full-time.</p>
               </div>
