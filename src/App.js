@@ -44,7 +44,7 @@ class App extends Component {
             <p className="intro">Based out of Chattanooga, TN. I specialize in creating modern, responsive and user-friendly sites and apps.</p>
             <p className="intro">Currently avaliable for full-time job opportunities.</p>
             <p className="intro">
-                <a href="mailto:tnea.mayweather@hotmail.com" className="contact">Contact me</a> and let's work together.</p>
+                <a href="mailto:tnea.mayweather@gmail.com" className="contact">Contact me</a> and let's work together.</p>
             <a href="#about" className="btn btn-primary">More About Me</a>
           </div>
         </div>
@@ -190,7 +190,7 @@ class App extends Component {
                 <h4>Get In Touch</h4>
                 <div className="contactInfo">
                   <span>Phone: (423) 505-8603</span>
-                  <span>Email: tnea.mayweather@hotmail.com</span>
+                  <span>Email: tnea.mayweather@gmail.com</span>
                 </div>
                 <div className="contactIcons mt-4">
                   <a href="https://github.com/TMayweather" target="_blank">
@@ -236,7 +236,7 @@ class App extends Component {
           </div>
           <footer>
             <div className="copywrite">
-              <span> &copy; 2018 T'NEA MAYWEATHER</span>
+              <span> &copy; 2023 T'NEA MAYWEATHER</span>
             </div>
             <div className="toTop">
               <a href="#top">
