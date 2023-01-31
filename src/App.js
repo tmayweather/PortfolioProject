@@ -76,7 +76,7 @@ class App extends Component {
             <div className="additional d-flex justify-content-center">
               <div className="row w-100">
                 <div className="col-md-4 col-sm-12">
-                  <h4>Additional Skills:</h4>
+                  <h4>Additional Skills</h4>
                 </div>
                 <div className="col-4">
                   <div className="d-flex flex-column">
